@@ -359,6 +359,12 @@ footer {
    text-align: center;
    
  }
+
+ .image_svg {
+  width: 58px;
+  height: 21px;
+ }
+
  b {
    color: rgb(163, 36, 36);
  }
@@ -453,7 +459,11 @@ footer {
      font-family: var(--main-font-family);
      padding: 7px;
    }
-
+   
+ .image_svg {
+  width: 28px;
+  height: 17px;
+ }
 }
 
 
