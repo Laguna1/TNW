@@ -183,7 +183,7 @@ body {
 header {
   height: 300px;
   position: relative;
-  font-family: var(--main-font-family);
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 .logo_tablet {
@@ -201,7 +201,7 @@ header {
 .logo_mobile {
   position: absolute;
   background-color: orange;
-  top: 0x;
+  top: 0;
   left: 0;
 }
 
@@ -217,15 +217,13 @@ a {
 .black {
   display: flex;
   flex-direction: row;
-  
   height: 32px;
-  background-color: var(--footer-color);
-  padding-left: 16px;
+  background-color: #011;
   font-size: 14px;
 }
 
 .black_left {
-  background-color: var(--footer-color);
+  background-color: #011;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -240,7 +238,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--footer-color);
+  background-color: #011;
   width: 35%;
   text-align: center;
   align-items: center;
@@ -302,7 +300,7 @@ main {
 footer {
   color: whitesmoke;
   text-align: center;
-  font-family: var(--main-font-family);
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   }
  
  ul {
@@ -314,7 +312,7 @@ footer {
  }
  
  .social_icons i:hover {
-   background-color: var(--footer-color);
+   background-color: #141414;
    }
  .foot_menu {
   padding: 12px;
@@ -339,7 +337,7 @@ footer {
    justify-content: center;
    font-size: 20px;
   }
- 
+
  .social_icons > i {
    background: #333;
    border-radius: 50%;
@@ -349,11 +347,11 @@ footer {
    text-align: center;
    width: 35px;
    cursor: pointer;
-   border: 1px solid #333;
+   border: 1px solid #011;
  }
  .footer_bottom {
    padding: 48px;
-   background-color: var(--footer-color);
+   background: #000;
    color: #aaa;
    font-size: 20px;
    text-align: center;
@@ -456,7 +454,7 @@ footer {
    }
    .foot_menu {
      font-size: 13px;
-     font-family: var(--main-font-family);
+     font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
      padding: 7px;
    }
    
