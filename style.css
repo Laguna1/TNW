@@ -157,39 +157,74 @@ body {
 
 * {
   box-sizing: border-box;
+ 
+}
+
+div {
   border: 1px solid black;
 }
 
 header {
   height: 300px;
+  position: relative;
+  font-family: var(--main-font-family);
 }
+
+.navbar {
+  
+  
+}
+
 .logo_tablet {
-  grid-area: a;
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  left: 0;
+  height: 52px;
 }
+.logo_tablet > img {
+  height: 77px;
+  width: 120px;
+}
+
 .logo_mobile {
-  grid-area: b;
+  position: absolute;
+  background-color: orange;
+  top: 0x;
+  left: 0;
 }
+
+.logo_mobile > img  {
+  width: 63px;
+  height: 37px;
+}
+  
 .black {
   display: flex;
   flex-direction: row;
   color: white;
-
-
+  height: 32px;
+  background-color: var(--footer-color);
+  padding-left: 16px;
 }
+
 .black_left {
-  background-color: blue;
+  background-color: var(--footer-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
   width: 65%;
+}
+.black_center {
+  width:  125px;
 }
 .black_right {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: red;
+  background-color: var(--footer-color);
   width: 35%;
   text-align: center;
   align-items: center;
@@ -197,9 +232,11 @@ header {
 }
 .white {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    height: 48px;
 }
 .far {
   
@@ -209,13 +246,11 @@ header {
 }
 
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
-  
+
 .yellow {
   background-color: yellow;
+  font-size: 16px;
+  height: 30px;
 }
 
 /* #region  Utility Classes */
@@ -272,17 +307,65 @@ header {
   body {
     background-color: lightgreen;
   }
+  .logo_tablet {
+    display: none;
+    visibility: hidden;
+  }
+  .logo_mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .menu {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   body {
     background-color: pink;
   }
+  .logo_mobile {
+    visibility: hidden;
+  }
+  .black,
+  .white {
+    padding-left: 130px;
+  }
+  .black_right {
+    display: none;
+  }
+  .menu {
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (max-width: 320px) {
   body {
     background-color: lightblue;
+  }
+  .logo_tablet {
+    display: none;
+  }
+  .logo_mobile {
+    visibility: visible;
+    top: 0;
+  }
+  
+  .black,
+  .awb {
+    display: none;
+  }
+  .white {
+    justify-content: space-evenly;
+    height: 40px;
+  }
+  .menu {
+    visibility: visible;
+    color: red;
+  }
+  .yellow > a {
+    font-size: 10px;
   }
 
 }
