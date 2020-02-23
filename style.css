@@ -160,19 +160,30 @@ body {
  
 }
 
-div {
-  border: 1px solid black;
-}
+/* #region  Utility Classes */
+
+/* #endregion Utility Classes */
+
+/* #region  State Rules */
+
+/* #endregion State Rules */
+
+/* #region  Base Rules */
+
+/* #endregion Base Rules */
+
+/* #region  Layout Rules */
+
+/* #endregion Layout Rules */
+
+/* #region  Module Rules */
+
+/* #region  Navbar */
 
 header {
   height: 300px;
   position: relative;
   font-family: var(--main-font-family);
-}
-
-.navbar {
-  
-  
 }
 
 .logo_tablet {
@@ -198,14 +209,19 @@ header {
   width: 63px;
   height: 37px;
 }
-  
+ 
+a {
+  text-decoration: none;
+}
+
 .black {
   display: flex;
   flex-direction: row;
-  color: white;
+  
   height: 32px;
   background-color: var(--footer-color);
   padding-left: 16px;
+  font-size: 14px;
 }
 
 .black_left {
@@ -228,8 +244,13 @@ header {
   width: 35%;
   text-align: center;
   align-items: center;
-
 }
+
+.black_left > a,
+.black_right > a {
+  color: white;
+}
+
 .white {
   display: flex;
     flex-direction: row;
@@ -237,44 +258,24 @@ header {
     background-color: white;
     align-items: center;
     height: 48px;
-}
-.far {
-  
-}
-.fas {
-  
+    font-size: 16px;
 }
 
-
+.awb {
+  color: black;
+}
 
 .yellow {
   background-color: yellow;
   font-size: 16px;
   height: 30px;
+  padding-left: 36px;
 }
 
-/* #region  Utility Classes */
-
-/* #endregion Utility Classes */
-
-/* #region  State Rules */
-
-/* #endregion State Rules */
-
-/* #region  Base Rules */
-
-/* #endregion Base Rules */
-
-/* #region  Layout Rules */
-
-/* #endregion Layout Rules */
-
-/* #region  Module Rules */
-
-/* #region  Navbar */
-
 /* #endregion Navbar */
-
+main {
+  height: 300px;
+}
 
 /* #region  Three Images */
 
@@ -297,8 +298,70 @@ header {
 
 /* #endregion  Component Rules */
 
-
-
+/* #region  Footer */
+footer {
+  color: whitesmoke;
+  text-align: center;
+  }
+ 
+ ul {
+   list-style: none;
+  }
+ 
+ .social_icons {
+   padding: 12px;
+ }
+ 
+ .social_icons i:hover {
+   background-color: var(--footer-color);
+   }
+ .foot_menu {
+  padding: 12px;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: whitesmoke;
+ }
+ .footer_top {
+   background-color: #0f0f0f;
+   margin: 0 auto;
+   padding: 20px 0;
+   height: 155px;
+   line-height: 2.5em;
+ }
+ 
+ .social,
+ .menu_bottom {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   font-size: 20px;
+  }
+ 
+ .social_icons > i {
+   background: #333;
+   border-radius: 50%;
+   display: block;
+   height: 35px;
+   padding: 10px;
+   text-align: center;
+   width: 35px;
+   cursor: pointer;
+   border: 1px solid #333;
+ }
+ .footer_bottom {
+   padding: 48px;
+   background-color: var(--footer-color);
+   color: #aaa;
+   font-size: 20px;
+   text-align: center;
+ }
+ b {
+   color: rgb(163, 36, 36);
+ }
+ 
+ 
 /* #endregion  Footer */
 
 /* #region  Media Queries */
@@ -331,8 +394,12 @@ header {
   .white {
     padding-left: 130px;
   }
-  .black_right {
+  .black_right,
+  .awb-1 {
     display: none;
+  }
+  .white {
+    font-size: 14px;
   }
   .menu {
     visibility: hidden;
