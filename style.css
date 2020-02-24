@@ -158,8 +158,7 @@ body {
 
 * {
   box-sizing: border-box;
- 
-}
+ }
 
 /* #region  Utility Classes */
 
@@ -323,7 +322,8 @@ footer {
  
  .social_icons i:hover {
    background-color: #141414;
-   }
+ }
+
  .foot_menu {
   padding: 12px;
  }
@@ -332,6 +332,7 @@ footer {
   text-decoration: none;
   color: whitesmoke;
  }
+
  .footer_top {
    background-color: #0f0f0f;
    margin: 0 auto;
@@ -359,14 +360,14 @@ footer {
    cursor: pointer;
    border: 1px solid #011;
  }
+
  .footer_bottom {
    padding: 48px;
    background: #000;
    color: #aaa;
    font-size: 20px;
    text-align: center;
-   
- }
+  }
 
  .image_svg {
   width: 58px;
@@ -479,7 +480,7 @@ footer {
    .rss {
      display: none;
    }
-   
+
    .foot_menu {
      font-size: 13px;
      font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
