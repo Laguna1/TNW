@@ -274,6 +274,9 @@ a {
 
 /* #endregion Navbar */
 
+
+
+/* #region  Three Images */
 main {
   height: 300px;
 }
@@ -284,8 +287,6 @@ section {
   
   
 }
-
-/* #region  Three Images */
 
 .three_im {
   display: grid;
@@ -433,9 +434,6 @@ span {
   grid-template-columns: repeat(4, 22.5%);
   grid-gap: 20px;
 }
-
-/* #endregion Middle Box*/
-
 .middle_box {
   padding: 20px 5%;
   display: grid;
@@ -443,6 +441,10 @@ span {
   grid-template-rows: auto auto auto;
   grid-gap: 31px;
 }
+
+/* #endregion Middle Box*/
+
+
 
 /* #endregion Module Rules */
 
