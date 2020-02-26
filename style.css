@@ -152,7 +152,6 @@ table {
 /* #endregion Global Variables */
 
 body {
-  border: 5px solid white;
   margin: 0;
 }
 
@@ -192,7 +191,7 @@ header {
   top: 0;
   left: 0;
   height: 52px;
-}
+ }
 
 .logo_tablet > img {
   height: 77px;
@@ -282,30 +281,193 @@ section {
   border: 2px solid red;
   align-items: center;
   text-align: center;
+  
+  
 }
 
 /* #region  Three Images */
+
+.three_im {
+  display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 263px 263px;
+    gap: 10px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0 auto;
+    /* padding: 82px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: max-content;
+}
+
+.first_big_one {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  max-width: 66%;
+  height: 100%;
+  
+}
+
+
+.first_big_two {
+  grid-row: 1 / 2;
+  grid-column: 2 / 2;
+  min-width: 33%;
+  height: 100%;
+}
+
+.first_big_three {
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+  min-width: 33%;
+  height: 100%;
+}
+
+.article_wrapper {
+  border: 1px solid black;
+  background-image: url(assets/m_three_images\ three_im.jpg);
+  background-size: cover;
+  margin-right: 8px;
+  max-width: 100%;
+  height: auto;
+ }
+
+.fbo_logo {
+background-image: url(assets/tnw_logo_big_white_1.jpg);
+
+}
+
+.fbo-date {
+  
+}
+
+.article_wrapper > img {
+ 
+
+}
+
+.fbo_title {
+ 
+}
+
+.article_content_1 {
+  
+}
+
+.ac_1 {
+  
+}
+
+.fbo_ac_ul {
+  
+}
+
+.fbtwo_image {
+  
+}
+
+.ac_2 {
+  
+}
 
 /* #endregion Three Images */
 
 /* #region  Latest News */
 
+.until_ln {
+  margin: 75px;
+}
+.until_ln_2 {
+  margin: 75px;
+}
+
+.latest_news {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  align-items: center;
+  margin: -42px auto 0 auto;
+  height: 36vh;
+  /* box-sizing: content-box; */
+  position: relative;
+  max-width: 950px;
+  padding: 35px;
+}
+
+
+.a_latest_news {
+  padding: 0;
+  text-align: left;
+  background-color: yellow;
+  height: 194px;
+  max-width: 220px;
+  
+}
+
+.a_latest_news a img {
+  width: 100%;
+    height: auto;
+    min-width: 221px;
+}
+
+.ab_latest_news {
+  font-family: var(--main-font-family);
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+span {
+  font-family: var(--main-font-family);
+  font-size: 13px;
+  color: rgb(153, 147, 147);
+}
 /* #endregion  Latest News */
 
 /* #region  Middle Box */
 
+.latest_funding {
+  padding: 120px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5%);
+  grid-gap: 20px;
+}
 
 /* #endregion Middle Box*/
+
+.middle_box {
+  padding: 20px 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: auto auto auto;
+  grid-gap: 31px;
+}
 
 /* #endregion Module Rules */
 
 /* #region  Component Rules */
 
+.bef_latest_deals {
+  padding: 20px 10% 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  font-weight: 800;
+}
 
+.latest_deals {
+  padding: 20px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5%);
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
 
 /* #endregion  Component Rules */
 
 /* #region  Footer */
+
 footer {
   color: whitesmoke;
   text-align: center;
@@ -430,6 +592,34 @@ footer {
     visibility: hidden;
   }
 
+  .fbo-date {
+    display: none;
+  }
+
+  .article_content_1 {
+    line-height: 1;
+  }
+
+  .ac_1 {
+    font-family: var(--main-font-family);
+    font-size: 19px;
+    color: #FFFFFF;
+    width: 25vh;
+  }
+
+  .latest_news,
+  .latest_funding,
+  .latest_deals {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .a_latest_news > img {
+    width: 213px;
+  }
+
+  .middle_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .menu_bottom {
     font-size: 13px;
   }
@@ -472,6 +662,30 @@ footer {
   .yellow > a {
     font-size: 10px;
   }
+  
+  .three_im {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a"
+                         "b";
+  }
+
+  .first_big_three {
+    display: none;
+  }
+
+  .ac_1 {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+
+  .latest_news,
+  .latest_funding,
+  .middle_box,
+  .latest_deals {
+    grid-template-columns: 1fr;
+  }
 
    .social_icons {
    padding: 4px;
@@ -495,4 +709,4 @@ footer {
 
 
 
-/* #endregion */
+/* #endregion Media Queries*/
